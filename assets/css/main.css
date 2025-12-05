@@ -1936,7 +1936,7 @@ section,
 .faq .faq-container .faq-item h3 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 16px;
   margin: 0 30px 0 0;
   transition: 0.3s;
   cursor: pointer;
@@ -1952,7 +1952,13 @@ section,
 .faq .faq-container .faq-item h3:hover {
   color: var(--accent-color);
 }
-
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+/*
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
@@ -1963,6 +1969,16 @@ section,
 
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-content div {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+*/
+.faq .faq-container .faq-item .faq-content .faq-inner {
+    margin-bottom: 0;
   overflow: hidden;
 }
 
@@ -1983,14 +1999,19 @@ section,
 .faq .faq-container .faq-active h3 {
   color: var(--accent-color);
 }
-
+/*
 .faq .faq-container .faq-active .faq-content {
   grid-template-rows: 1fr;
   visibility: visible;
   opacity: 1;
   padding-top: 10px;
 }
-
+*/
+.faq .faq-container .faq-item.faq-active .faq-content {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  padding-top: 10px;
+}
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
