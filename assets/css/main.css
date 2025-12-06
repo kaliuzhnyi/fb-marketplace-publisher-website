@@ -1937,7 +1937,7 @@ section,
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  margin: 0 30px 0 0;
+  margin: 5px 30px 0 0;
   transition: 0.3s;
   cursor: pointer;
   display: flex;
@@ -1966,19 +1966,14 @@ section,
   visibility: hidden;
   opacity: 0;
 }
-
+*/
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
 }
 
-.faq .faq-container .faq-item .faq-content div {
-  margin-bottom: 0;
-  overflow: hidden;
-}
-*/
 .faq .faq-container .faq-item .faq-content .faq-inner {
-    margin-bottom: 0;
+  margin-bottom: 0;
   overflow: hidden;
 }
 
@@ -1988,6 +1983,7 @@ section,
   right: 20px;
   font-size: 16px;
   line-height: 0;
+  margin-top: 5px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -2010,8 +2006,13 @@ section,
 .faq .faq-container .faq-item.faq-active .faq-content {
   grid-template-rows: 1fr;
   opacity: 1;
-  padding-top: 10px;
+  padding-top: 5px;
 }
+
+.faq .faq-container .faq-item .faq-content {
+  padding-top: 5px;
+}
+
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
