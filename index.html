@@ -88,8 +88,12 @@
 
                         <div class="hero-buttons">
                             <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
-                            <a href="https://www.youtube.com"
-                               class="btn btn-link mt-2 mt-sm-0 glightbox">
+                            <a href="https://youtu.be/bZAGRH6ggm8"
+                               class="btn btn-link mt-2 mt-sm-0 glightbox"
+                               data-bs-toggle="tooltip"
+                               data-bs-placement="top"
+                               data-bs-custom-class="custom-tooltip"
+                               data-bs-title="Postiqo Demo: Publish a Marketplace Listing in 1 Minute">
                                 <i class="bi bi-youtube me-2 text-danger"></i>
                                 Play Video
                             </a>
@@ -1425,6 +1429,9 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/contact.js"></script>
 <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
     document.addEventListener('DOMContentLoaded', function () {
       const el = document.querySelector('#carouselExampleCaptions');
       console.log('carousel element:', el);
