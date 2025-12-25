@@ -891,6 +891,20 @@ section,
   padding-bottom: 2rem;
 }
 
+.hero .partners-row {
+  position: relative;
+  z-index: 1;
+  margin-top: 5rem;
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 0 1.5rem 0rem 1.5rem;
+}
+
+.hero .partners-row .disclaimer {
+  font-size: .7rem;
+}
+
 .hero .stat-item {
   display: flex;
   align-items: center;
@@ -1582,6 +1596,40 @@ section,
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Partners Section
+--------------------------------------------------------------*/
+.partners .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.partners .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.partners .swiper-wrapper {
+  height: auto;
+}
+
+.partners .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.partners .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.partners .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
