@@ -891,20 +891,6 @@ section,
   padding-bottom: 2rem;
 }
 
-.hero .partners-row {
-  position: relative;
-  z-index: 1;
-  margin-top: 5rem;
-  background-color: var(--surface-color);
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  padding: 0 1.5rem 0rem 1.5rem;
-}
-
-.hero .partners-row .disclaimer {
-  font-size: .7rem;
-}
-
 .hero .stat-item {
   display: flex;
   align-items: center;
@@ -1602,6 +1588,20 @@ section,
 /*--------------------------------------------------------------
 # Partners Section
 --------------------------------------------------------------*/
+.partners-row {
+  position: relative;
+  z-index: 1;
+  margin-top: 5rem;
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 0 1.5rem 0rem 1.5rem;
+}
+
+.partners-row .disclaimer {
+  font-size: .7rem;
+}
+
 .partners .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
