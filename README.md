@@ -2,15 +2,19 @@
 
 ## Getting started and trial requests
 
-- `/try/` guides visitors through downloading, exploring the app, and requesting a trial.
+- `/try/` guides visitors through downloading, importing and reviewing inventory for free, then requesting a 7-day publishing trial in the app.
 - `/download/` provides the current Windows installer and links back to the setup guide.
 - The homepage links to **Try Postiqo** from the navigation, hero, demo section, and footer.
 
-Demo and trial forms use the existing Formspree endpoint `https://formspree.io/f/xvgeqgdd` and the shared handler in `assets/js/request-form.js`. Trial emails have the subject **New Postiqo trial request** and include name, dealership, website, email, phone, Facebook account, and optional notes.
+The primary trial request lives in Postiqo Publisher. Customers first sign in to Facebook in the app, which includes the account automatically. The dealership website is required and can be edited after being filled from the inventory source settings. Importing and reviewing vehicles needs neither a license nor Facebook sign-in. Publishing still requires an active license.
+
+The collapsed website trial form is an optional fallback. Demo and website trial forms use the existing Formspree endpoint `https://formspree.io/f/xvgeqgdd` and the shared handler in `assets/js/request-form.js`. Trial emails have the subject **New Postiqo trial request** and include name, dealership, website, email, phone, Facebook account, and optional notes.
 
 With JavaScript enabled, the Facebook field accepts a numeric ID, username, or personal profile URL and sends `facebook_user_id` plus a normalized `facebook_profile_url`. Numeric IDs remain strings. Usernames are preserved as usernames; the site does not look up numeric IDs. The `/me` shortcut itself is rejected because it does not identify an account. Without JavaScript, the required fields still apply and Formspree receives the Facebook value as entered.
 
-Trial activation is manual. After adding the requested account to the license, email the customer to confirm access. The website only collects the request and tells the customer to wait for that email before signing in through Postiqo and running a flow.
+Trial activation is manual. After adding the requested account to the license, email the customer to confirm access. Customers then select **Check activation** in the app and start publishing once their license is active. The 7-day publishing trial starts at activation; importing and reviewing inventory remains free.
+
+GitHub Pages publishes the repository root from `master` without a build step. Publish onboarding copy that names new app controls only after the corresponding stable Windows installer is available.
 
 ### Setup video
 

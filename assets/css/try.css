@@ -380,7 +380,41 @@
 }
 
 .try-request-layout {
-  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.try-app-steps {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0;
+  padding-left: 24px;
+  color: var(--try-muted);
+}
+
+.try-app-steps li::marker {
+  color: var(--try-blue);
+  font-weight: 700;
+}
+
+.try-fallback-form {
+  grid-column: 1 / -1;
+}
+
+.try-fallback-form summary {
+  color: var(--try-ink);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.try-fallback-form summary:focus-visible {
+  outline: 3px solid var(--try-blue);
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+
+.try-fallback-form[open] summary {
+  margin-bottom: 18px;
 }
 
 .try-next-steps {
