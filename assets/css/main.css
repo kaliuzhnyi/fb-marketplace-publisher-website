@@ -2151,7 +2151,32 @@ section,
 .call-to-action-2 .cta-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
   justify-content: center;
+}
+
+.call-to-action-2 .cta-btn-primary {
+  border-color: #fff;
+  background: #fff;
+  color: #0758ac;
+}
+
+.call-to-action-2 .cta-btn-primary:hover {
+  background: #edf6ff;
+  color: #064d96;
+}
+
+.call-to-action-2 .cta-help {
+  padding: 12px 0;
+  color: var(--contrast-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.call-to-action-2 .cta-actions a:focus-visible {
+  outline: 3px solid var(--contrast-color);
+  outline-offset: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -3084,6 +3109,13 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 42%);
   font-size: 0.78rem;
   text-align: center;
+}
+
+.pricing .pricing-trial-note {
+  max-width: 720px;
+  margin: 16px auto 0;
+  color: #526579;
+  font-size: 0.9375rem;
 }
 
 @media (max-width: 1199px) {

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.5">
     <link rel="stylesheet" href="/assets/css/try.css?v=3">
     <script src="/assets/js/request-form.js?v=1" defer></script>
 </head>
@@ -39,7 +39,7 @@
             </a>
             <nav class="try-header-nav" aria-label="Main navigation">
                 <a class="try-home-link" href="/">Back to website</a>
-                <a class="try-button try-button-small try-button-outline" href="/#contact">Book a Demo</a>
+                <a class="try-button try-button-small" href="#download">Download app</a>
             </nav>
         </div>
     </header>
@@ -51,7 +51,7 @@
             <p class="try-lead">Download the app and see your own vehicles in Postiqo.<br class="d-none d-md-inline"> Request a 7-day publishing trial when you're ready.</p>
             <div class="try-license-note">
                 <i class="bi bi-unlock" aria-hidden="true"></i>
-                <p><strong>Importing and reviewing inventory is free.</strong> You don't need a license or Facebook sign-in to import. Publishing requires an active license.</p>
+                <p><strong>Importing inventory and previewing listings is free.</strong> You can explore with your own vehicles before signing in to Facebook. Request a trial when you're ready to publish; our team will activate it and confirm by email.</p>
             </div>
         </section>
 
@@ -78,11 +78,10 @@
                             <p><i class="bi bi-windows" aria-hidden="true"></i> Desktop app for Windows</p>
                         </div>
                     </div>
-                    <a class="try-button" href="/download/">
-                        <i class="bi bi-download" aria-hidden="true"></i> Go to Download
-                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                    <a class="try-button" href="https://github.com/kaliuzhnyi/postiqo-publisher-releases/releases/latest/download/Postiqo.Publisher.Windows-win-Setup.exe">
+                        <i class="bi bi-download" aria-hidden="true"></i> Download for Windows
                     </a>
-                    <p class="try-small">Get the latest installer from our download page.</p>
+                    <p class="try-small">Downloads the latest Windows installer.</p>
                 </div>
             </div>
         </section>
@@ -93,13 +92,13 @@
                 <div class="try-step-copy">
                     <p class="try-eyebrow">STEP 2</p>
                     <h2 id="explore-title">See your inventory in Postiqo.</h2>
-                    <p>Open <strong>Settings &gt; Data</strong>, choose your inventory source, and enter your dealership website or source details.</p>
+                    <p>The setup guide opens when you first set up an instance. Start by choosing your inventory source in <strong>Settings &gt; Data</strong> and entering your dealership website or file details.</p>
                     <ul class="try-checklist">
                         <li><i class="bi bi-check2" aria-hidden="true"></i> Select Import Inventory to save your source settings and run one full import.</li>
                         <li><i class="bi bi-check2" aria-hidden="true"></i> Check the result, including how many vehicles were added or updated. Select View inventory to review their details and photos.</li>
-                        <li><i class="bi bi-check2" aria-hidden="true"></i> Adjust your location, description templates, posting limits, and schedule before publishing.</li>
+                        <li><i class="bi bi-check2" aria-hidden="true"></i> Select a vehicle and open its listing preview to see your photos, price, and description before publishing.</li>
                     </ul>
-                    <p class="try-muted">You can import again whenever you need to refresh your vehicles. Importing is free and does not publish any listings.</p>
+                    <p class="try-muted">The guide saves your progress. Close it whenever you like and select <strong>Open setup guide</strong> on the <strong>Welcome</strong> page to continue. You can adjust templates and schedules later in Settings.</p>
                 </div>
                 <figure class="try-video">
                     <iframe class="try-video-player"
@@ -125,7 +124,7 @@
                 <div class="try-step-copy">
                     <p class="try-eyebrow">STEP 3</p>
                     <h2 id="request-title">Request your trial in the app.</h2>
-                    <p>When you're ready to publish, open the <strong>Welcome</strong> page in Postiqo.</p>
+                    <p>Continue in the setup guide, or open the <strong>Welcome</strong> page when you're ready to publish.</p>
                     <ol class="try-app-steps">
                         <li>Select <strong>Sign in to Facebook</strong> and sign in with the personal account you plan to publish from.</li>
                         <li>Select <strong>Request a free trial</strong>. Your connected Facebook account is included automatically.</li>
@@ -141,8 +140,8 @@
                         <ol>
                             <li>We review your request and activate trial access for your Facebook account.</li>
                             <li>You receive an email confirming your trial is ready.</li>
-                            <li>Return to Postiqo and select <strong>Check activation</strong> to refresh your license status.</li>
-                            <li>Once your license is active, open <strong>Dashboard &gt; Inventory</strong>, choose a saved vehicle and select <strong>Publish to Facebook</strong>.</li>
+                            <li>Postiqo checks for activation while the app is open. You can also select <strong>Check activation</strong> to refresh your license status.</li>
+                            <li>Once your license is active, return to the setup guide and select <strong>Publish to Facebook</strong> to publish the vehicle you previewed. Requesting a trial does not publish anything.</li>
                             <li>When available, select <strong>Open Facebook listing</strong> in the success message to view your post.</li>
                         </ol>
                         <p>Your publishing trial gives you 7 days of free use from activation. You can keep importing and reviewing vehicles while you wait.</p>
@@ -238,7 +237,7 @@
         <nav aria-label="Footer navigation">
             <a href="/">Home</a>
             <a href="/download/">Download</a>
-            <a href="/#contact">Book a Demo</a>
+            <a href="/#contact">Setup help</a>
             <a href="mailto:support@postiqo.io">Contact support</a>
         </nav>
     </footer>
